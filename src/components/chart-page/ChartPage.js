@@ -47,6 +47,11 @@ const ChartPage = () => {
             />
 
         </VictoryChart>
+
+        <div className='d-center'>
+          X-Axis:  Years Values <br/>
+          Y-Axis:  Count Values / Award Amounts
+        </div>
 	</div>
 
   )
