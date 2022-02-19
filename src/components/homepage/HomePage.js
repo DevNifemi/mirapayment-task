@@ -79,7 +79,7 @@ const HomePage = () => {
           </div>
 
           <button 
-            disabled={body.length > 1 && title.length > 3 ? false : true} 
+            disabled={title.length >= 1 && body.length >= 3 ? false : true} 
             type='submit'
           >Create Post</button>
        </form>

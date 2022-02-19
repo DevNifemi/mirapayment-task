@@ -36,7 +36,7 @@ const ChartPage = () => {
 
     // JSX elements 
   return (
-	<div className='d-center' style={{ maxWidth: "700px", marginTop: 60 }}>
+	<div className='d-center' style={{ maxWidth: "700px", marginTop: 100 }}>
         <VictoryChart domainPadding={10}>
 
             <VictoryHistogram 
