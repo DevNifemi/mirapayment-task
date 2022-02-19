@@ -1,13 +1,152 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* DEFAULT COLORS FOR GENERAL USAGE  */
+:root {
+  --header_input_light_black: #BDBDBD;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+
+.loading{
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.update-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.update-form button{
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background: #08BD37;
+  cursor: pointer;
+  padding: 10px 14px 10px 14px;
+  border-radius: .3em;
+  color: #fff;
+}
+.update-form-lists{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+textarea{
+  padding: 8px 20px 8px 12px;
+  outline: none;
+  border: 1px solid rgb(91, 138, 91);
+  margin-left: 10px;
+  font-size: 13px;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+input{
+  padding: 8px 20px 8px 12px;
+  outline: none;
+  border: 1px solid rgb(91, 138, 91);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+.task-2-intro{
+  width: 100%;
+  background-color: #0ea035;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.task-2-intro a{
+  font-size: 15px;
+  color: rgb(243, 247, 40) !important;
+}
+
+
+
+/* HELPER CLASSES/METHODS FOR GENERAL USAGE */
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-center{
+  margin: 0 auto;
+  display: block;
+}
+.t-center{
+  text-align: center;
+}
+button:disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background: #6bee8ee7;
+  padding: 10px 14px 10px 14px;
+  border-radius: .3em;
+  color: #fff;
+}
+
+
+
+/* -------MEDIA QUERY------- */
+@media screen and (max-width: 601px){
+  .d-center{
+    width: 100vw !important;
+    padding: 20px;
+  }
+  .update-form-lists{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .update-form{
+    margin-bottom: 50px;
+  }
+  .update-form-lists input{
+    width: 92%;
+    margin-top: 10px;
+    display: block;
+  }
+  .info{
+    margin: 40px auto;
+    border-radius: 2px;
+    width: 92%;
+    padding: 0px 10px 0px 10px;
+
+  }
+}  
+
+/* CONTAINER CLASS FOR BIGGER SCREENS TO FIT IN CENTER  */
+@media (min-width: 1400px) {
+  .container {
+      width: 1350px;
+      margin-right: auto;
+      margin-left: auto;
+  }
 }
